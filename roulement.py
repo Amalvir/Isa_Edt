@@ -2,7 +2,7 @@
 
 # Extraction des données
 with open("roulement.csv", 'r') as roulement:
-    Lroul =[]
+    Lroul = []
     entete = roulement.readline().strip().split('\t')  # On enleve l'en-tete
 
     for ligne in roulement:
@@ -15,7 +15,7 @@ for i in range(len(Lroul)):
         Lroul[i][j] = Lroul[i][j].split(',')
 
 
-def roulement(date, kh):
+def rlmnt(date, kh):
     """Retourne les indices de entete"""
 
     try:            # Test si on utilise indice ou pas
@@ -46,7 +46,7 @@ def roulement(date, kh):
 
 
 # Interface utilisateur
-groupe = str(input('quel est votre trinome ? : '))
+"""groupe = str(input('quel est votre trinome ? : '))
 sem = str(input('quelle semaine (date du lundi) ? : '))
 
 indice_entete = roulement(sem, groupe)
@@ -54,4 +54,4 @@ if indice_entete == [] or indice_entete is None:
     print('Rien !')
 else:
     for k in indice_entete:
-        print(entete[k])
+        print(entete[k])"""
