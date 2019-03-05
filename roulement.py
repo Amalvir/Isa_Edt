@@ -1,7 +1,7 @@
 ## Roulement
 
 # Extraction des données
-with open("roulement.csv", 'r') as roulement:
+with open("resources/roulement.csv", 'r') as roulement:
     Lroul = []
     entete = roulement.readline().strip().split('\t')  # On enleve l'en-tete
 
@@ -17,11 +17,6 @@ for i in range(len(Lroul)):
 
 def rlmnt(date, kh):
     """Retourne les indices de entete"""
-
-    try:            # Test si on utilise indice ou pas
-        date = Lroul[int(date)][0][0]
-    except:
-        pass
 
     j = -1
     liste = []
