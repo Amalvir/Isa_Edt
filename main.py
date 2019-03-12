@@ -17,9 +17,12 @@ while True:
         print('Rien !')
     else:
         # Partie de l'edt
+        print("\nEmploi du temps:")
         for k in indice_entete:
-            print(entete[k])
-        print("Colle :")
+            print(entete[k], end='\t')
+
         # Partie des colles
+        print("\n\nColle:")
         for i in range(len(tps)):
-            print('\n', (transfo(tps[i])))
+            print((transfo(tps[i])), end='\t')
+        print("\n")
